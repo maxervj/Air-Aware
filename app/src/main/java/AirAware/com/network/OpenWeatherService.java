@@ -5,11 +5,12 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-public interface WeatherApiService {
+public interface OpenWeatherService {
 
 
+    Call<Forecast> getForecast(String lasVegas, String s, String metric, String fr);
 
-    public interface weatherApiService {
+    public interface openWeatherService {
         @GET("weather")
         Call<Forecast> getForecast(
                 @Query("q") String city,         // "London" par ex.

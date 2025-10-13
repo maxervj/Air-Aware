@@ -4,4 +4,7 @@ import dagger.hilt.android.HiltAndroidApp;
 
 @HiltAndroidApp
 public class App {
+    public static Application application;
+    public App() {
+    }
 }

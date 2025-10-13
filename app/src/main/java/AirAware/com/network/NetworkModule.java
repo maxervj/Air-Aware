@@ -19,8 +19,8 @@ public class NetworkModule {
 
     @Provides
     @Singleton
-    public WeatherApiService provideOpenWeatherService(Retrofit retrofit) {
-        return retrofit.create(WeatherApiService.class);
+    public OpenWeatherService provideOpenWeatherService(Retrofit retrofit) {
+        return retrofit.create(OpenWeatherService.class);
     }
 }
 
